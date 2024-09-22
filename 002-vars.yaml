@@ -1,0 +1,9 @@
+# in ansible, if you attempt to print a variable that is not declared,ANSIBLE throws an exception!
+- name: Demo on Vars
+  hosts: all
+  vars:
+    URL: play.google.com
+  tasks:
+   - name: printing url
+     ansible.builtin.debug:
+        msg: Value of URL is {(URL)}     # in bash,we use "echo $URL"
