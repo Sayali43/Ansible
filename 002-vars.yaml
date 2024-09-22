@@ -6,4 +6,4 @@
   tasks:
    - name: printing url
      ansible.builtin.debug:
-        msg: Value of URL is {(URL)}     # in bash,we use "echo $URL"
+        msg: Value of URL is {{URL}}     # in bash,we use "echo $URL"
