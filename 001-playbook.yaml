@@ -9,4 +9,16 @@
      ansible.builtin.debug:
         msg: "Hai from task1 of play1"
 
+- name: Play2
+  hosts: all
+  tasks:
+   - name: task1 of Play2
+     ansible.builtin.debug:
+        msg: "hola from task1 of play2"
+
+   - name: task2 of Play2
+     ansible.builtin.debug:
+        msg: "Namste from task1 of play2"
+
+
   
