@@ -20,3 +20,4 @@ If you go with tihs approach, you can run or execute only one command/action at 
 
 Automated with Ansible is called playbooks and playbooks can be written by YAML(Presentation langauge)
 
+```$ ansible-playbook -i inv -e ansible_user=centos -e ansible_password=DevOps321 pbName.yaml```
