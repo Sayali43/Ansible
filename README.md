@@ -10,3 +10,13 @@ Ansible can be operated in 2 ways :
 
 Install Ansible :
 curl https://gitlab.com/thecloudcareers/opensource/-/raw/master/lab-tools/ansible/install.sh | sudo bash
+
+Ansible is about all modules
+
+
+ansible all -i inv -e ansible_user=centos -e ansible_password=DevOps321 -m shell -a uptime
+
+If you go with tihs approach, you can run or execute only one command/action at a time
+
+Automated with Ansible is called playbooks and playbooks can be written by YAML(Presentation langauge)
+
