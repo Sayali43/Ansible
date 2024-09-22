@@ -7,3 +7,16 @@
    - name: printing url
      ansible.builtin.debug:
         msg: Value of URL is {{URL}}     # in bash,we use "echo $URL"
+
+    
+   - name: printing url from task
+     ansible.builtin.debug:
+        msg: Value of URL is {{URL}}     # in bash,we use "echo $URL"
+     vars:
+        URL: task.google.com
+
+   - name: printing city name      
+     ansible.builtin.debug:
+        msg: {{CITY}}     # in bash,we use "echo $URL"
+    
+#Variable precedence: task varibale > play variables   
