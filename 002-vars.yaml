@@ -17,6 +17,6 @@
 
    - name: printing city name      
      ansible.builtin.debug:
-        msg: {{CITY}}     # in bash,we use "echo $URL"
+        msg: "{{CITY}}"         # in bash,we use "echo $URL"
     
 #Variable precedence: task varibale > play variables   
