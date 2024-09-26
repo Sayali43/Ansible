@@ -8,3 +8,6 @@
     - name: Printing uptime time 
      ansible.builtin.debug:
         msg: "uptime is {{OUT.stdout}}"  
+
+       
+
