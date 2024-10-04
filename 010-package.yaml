@@ -1,10 +1,11 @@
-- name: Demo on using package 
-  hosts: all 
-  become: yes
+- name: demo Installing package
+  hosts: all
   tasks:
     - name: Installing nginx
       ansible.builtin.package:
         name: nginx
+        state: present
+        
         
 
 
