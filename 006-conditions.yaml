@@ -1,0 +1,13 @@
+- name: Demo on conditions
+  hosts: all
+  tasks:
+   -  name: Run this only when the Distro is Centos
+      ansible.builtin.debug:
+        msg: OS Distro is {{ansible_distribution}}
+      when: ansible_distribution == "Centos"
+
+   -  name: Run this only when the Distro is Ubantu
+      ansible.builtin.debug:
+        msg: OS Distro is {{ansible_distribution}}
+      when: ansible_distribution == "Ubantu"
+      
