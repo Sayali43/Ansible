@@ -1,23 +1,11 @@
-
-- name: Ensure Python 3 and Nginx are installed
-  hosts: all
+- name: Demo on using package 
+  hosts: all 
   become: yes
-
   tasks:
-    - name: Install Python 3
-      yum:
-        name: python3
-        state: present
-      when: ansible_facts['distribution'] == "CentOS"
-
-    - name: Set Python 3 interpreter for Ansible
-      set_fact:
-        ansible_python_interpreter: /usr/bin/python3
-
-    - name: Install Nginx
-      yum:
+    - name: Installing nginx
+      ansible.builtin.package:
         name: nginx
-        state: present
+        
 
 
 
