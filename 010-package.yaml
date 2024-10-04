@@ -1,4 +1,4 @@
-- name: demo Installing package
+- name: demo using package
   hosts: all
   became: yes
   tasks:
