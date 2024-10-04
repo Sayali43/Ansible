@@ -16,6 +16,8 @@ Ansible is about all modules
 
 ansible all -i inv -e ansible_user=centos -e ansible_password=DevOps321 -m shell -a uptime
 
+$ gp;ansible-playbook -i inv -e ansible_user=centos -e ansible_password=DevOps321 -e URL=Ci.google.com 004-shell.yaml
+
 If you go with tihs approach, you can run or execute only one command/action at a time
 
 Automated with Ansible is called playbooks and playbooks can be written by YAML(Presentation langauge)
