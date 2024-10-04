@@ -1,0 +1,11 @@
+- name: Demo on errors
+  hosts: all 
+  tasks:
+    - name: Check Tomcat Is Running or Not 
+      ansible.builtin.shell: ps -ef | grep java | grep -v grep      
+      register: OUT    
+      ignore_errors: true
+
+    - name: Run Shipping 
+      ansible.builtin.debug:
+        msg: Shipping is up 
