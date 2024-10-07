@@ -1,5 +1,4 @@
 172.31.44.160
 172.31.33.75
 
-[servers:vars]
-ansible_python_interpreter=/usr/bin/python3.8
+
