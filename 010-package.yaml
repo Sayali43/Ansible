@@ -2,14 +2,11 @@
   hosts: all
   become: yes
   vars:
-    ansible_python_interpreter: /usr/bin/python3.6.8
+    ansible_python_interpreter: /usr/bin/python3
   
   tasks:
-    - name: Installing nginx
-      ansible.builtin.package:
-        name: nginx
-        state: present
-
+    - name: Check Python version
+      command: python3 --version
         
 
 
