@@ -5,8 +5,10 @@
     ansible_python_interpreter: /usr/bin/python3.8
   
   tasks:
-    - name: Check Python version
-      command: python3 --version
+    - name: Installing nginx
+      ansible.builtin.package:
+        name: nginx
+        state: present
         
 
 
