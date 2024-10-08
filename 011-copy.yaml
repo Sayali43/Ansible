@@ -1,0 +1,7 @@
+- name: demo on copy files
+  hosts: all
+  tasks:
+    - name: copy file owner and permissions
+      ansible.builtin.copy:
+      src: systemd.service
+      dest: /home/ec2-user
