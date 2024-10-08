@@ -3,5 +3,5 @@
   tasks:
     - name: copy file owner and permissions
       ansible.builtin.copy:
-      src: systemd.service
-      dest: /home/ec2-user
+        src: systemd.service
+        dest: /home/ec2-user
