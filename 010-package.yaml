@@ -8,6 +8,13 @@
       ansible.builtin.package:
         name: nginx
         state: present
+
+    - name: Install the latest version of wget and jq
+      ansible.builtin.package:
+        name:
+          - wget
+          - jq
+        state: latest
         
 
 
